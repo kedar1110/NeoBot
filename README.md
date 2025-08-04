@@ -30,6 +30,12 @@ NeoBot is a sleek and functional chatbot interface developed using JSP, Bootstra
 - OpenAI API integration
 
 ---
+Before 
+<p align="center">
+  <img src="images/.png" width="700" alt="NeoBot Chat UI" />
+</p>
 
-
-
+After
+<p align="center">
+  <img src="images/.png" width="700" alt="NeoBot Chat UI" />
+</p>
