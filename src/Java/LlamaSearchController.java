@@ -28,48 +28,6 @@ public class LlamaSearchController {
         model.addAttribute("chatHistory", session.getAttribute("chatHistory"));
         return "homeLlama";
     }
-
-    /*@RequestMapping("/send")
-    public String sendMessage(@RequestParam("querybox") String query, HttpSession session, Model model) {
-        @SuppressWarnings("unchecked")
-        List<ChatMessage> chatHistory = (List<ChatMessage>) session.getAttribute("chatHistory");
-        if (chatHistory == null) {
-            chatHistory = new ArrayList<>();
-        }
-
-        if (query != null && !query.trim().isEmpty()) {
-            chatHistory.add(new ChatMessage("user", query));
-            String answer = chatGptService.getOpenRouterResponse(query);
-            chatHistory.add(new ChatMessage("bot", answer));
-        }
-
-        session.setAttribute("chatHistory", chatHistory);
-        model.addAttribute("chatHistory", chatHistory);
-
-        return "homeLlama";
-    }*/
-	/*
-	 * @RequestMapping("/send") public String sendMessage(@RequestParam("querybox")
-	 * String query, HttpSession session, Model model) {
-	 * 
-	 * @SuppressWarnings("unchecked") List<ChatMessage> sessionHistory =
-	 * (List<ChatMessage>) session.getAttribute("chatHistory"); if (sessionHistory
-	 * == null) { sessionHistory = new ArrayList<>(); }
-	 * 
-	 * // Make a *separate copy* to work on List<ChatMessage> chatHistory = new
-	 * ArrayList<>(sessionHistory);
-	 * 
-	 * if (query != null && !query.trim().isEmpty()) { chatHistory.add(new
-	 * ChatMessage("user", query)); String answer =
-	 * chatGptService.getOpenRouterResponse(query); chatHistory.add(new
-	 * ChatMessage("bot", answer)); }
-	 * 
-	 * // Replace session attribute with the *new* list
-	 * session.setAttribute("chatHistory", chatHistory);
-	 * model.addAttribute("chatHistory", chatHistory);
-	 * 
-	 * return "homeLlama"; }
-	 */
     @GetMapping("/send")
     public String sendMessage(
             @RequestParam("querybox") String query,
@@ -92,5 +50,6 @@ public class LlamaSearchController {
         model.addAttribute("chatHistory", chatHistory);
         return "homeLlama";
     }
+
 
 }
