@@ -32,10 +32,10 @@ NeoBot is a sleek and functional chatbot interface developed using JSP, Bootstra
 ---
 Before 
 <p align="center">
-  <img src="src/Images/Screenshot (117).png" width="700" alt="NeoBot Chat UI" />
+  <img src="src/Images/Screenshot (117).png" width="500" alt="NeoBot Chat UI" />
 </p>
 
 After
 <p align="center">
-  <img src="src/Images/Screenshot (115).png" width="700" alt="NeoBot Chat UI" />
+  <img src="src/Images/Screenshot (115).png" width="500" alt="NeoBot Chat UI" />
 </p>
